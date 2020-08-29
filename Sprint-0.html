@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sprint0</title>
+    <style>
+        body {
+  font-family:comic-sns ;
+  font-size: 1rem;
+  align:center;
+  font-weight: 200;
+  line-height: 1.5;}
+  h1 {
+  font-weight: 400;
+  color:whiteblue;
+  font-size:75px;
+  line-height: 1.2;}
+  p {
+  font-size: 1.5rem;
+}
+button {
+  border: none;
+}
+.header {
+  padding: 0 0.625rem;
+  margin-bottom: 1.875rem;
+}
+
+    </style>
+</head>
+<body>
+    
+        <header>
+        <h1 style="font-size: 75px; font-weight: 400;">Clarusway Survey Form</h1>
+        <p>Thank you for taking the time to help us improve the platform</p>
+        </header>
+    
+    <form id="form">
+        <div>
+        <label>Name<br></label>
+        <br>
+        <input type="text" placeholder="Enter your name" required>
+        <label><br>Surname<br></label>
+        <br>
+        <input type="text" placeholder="Enter your surname" required>
+        <label><br>Email<br></label>
+        <br>
+        <input type="email" placeholder="user@clarusway.com" required>
+        
+            <p>Which option best describes your current role?</p>
+            <select name="role">
+                <option disabled selected value>Select current role</option>
+                <option value="first">Student</option>
+                <option value="second">Teacher</option>
+                <option value="third">Full Time Job</option>
+                <option value="fourth">Part Time Job</option>
+                <option value="fifth">Full Time Learner</option>
+                <option value="sixth">Prefer not to say</option>
+            </select>
+            <p></p>
+        
+            <p>Would you recommend Clarusway to a friend?</p>
+            <label><input type="radio" checked>Definitely, Yes<br><br></label>
+            <label><input type="radio">Maybe<br><br></label>
+            <label><input type="radio">Not Sure<br><br></label>
+            <label><input type="radio">Definitely, No<br><br></label>
+        
+        
+            <p>What is your favorite feature of Clarusway?</p>
+            <select name="feature" id="feature" required>
+                <option disabled selected value>Select an option</option>
+                <option value="courses">Courses</option>
+                <option value="projects">Projects</option>
+                <option value="community">Community</option>
+                <option value="mentors">Mentors</option>
+            </select>
+        
+        
+            <p>What would you like to see improved? (Check all that apply)</p>
+            <input type="checkbox" name="first" id="first" value="first">
+            <label for="second">Back-end Projects</label>
+            <br><br>
+            <input type="checkbox" name="second" id="second" value="second">
+            <label for="first">Front-end Projects</label>
+            <br><br>
+            <input type="checkbox" name="third" id="third" value="third">
+            <label for="third">Data Science</label>
+            <br><br>
+            <input type="checkbox" name="fourth" id="fourth" value="fourth">
+            <label for="fourth">Additional Courses</label>
+        
+        <br><br>
+        
+            <p>Any coments or suggestions?</p>
+            <textarea id="comment" class="textarea" name="comment" placeholder="Enter your comment here...Thanxs for your comments...."></textarea>
+        
+        <button type="submit" id="submit" class="submit">Submit</button>
+        </div>
+        </form>
+    
+    
+</body>
+</html>
